@@ -2,9 +2,9 @@
 # This function accepts a vector
 # and calculates the percentage value for
 # each element
-add_percent <- function(x, multiplier=100, no_digits=5)
+add_percent <- function(x, multiplier=1, no_digits=5)
 {
-  percent <- round( x * multiplier, digits = no_digits)
+  percent <- round( (x * 1)/100, digits = no_digits)
   result <- paste(percent, "%", sep = "")
   #Return the calculation, Note this is optional
   #Since R returns the value of the last line of code
